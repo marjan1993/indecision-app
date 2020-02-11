@@ -1,0 +1,34 @@
+// Block in bem , something big like header
+.header{ 
+    background: $off-black;
+    color:white;
+    margin-bottom: $m-size;
+    padding: $m-size 0; //1.6rem for above and below , 0 for left and right
+    // h1 {
+    //     color: red;
+    // }
+}
+//  .header h1{
+//      color: blue;
+//  }
+
+//new way using BEM --> Block Element Modifier
+
+//Elements in bem
+.header__title { 
+    font-size: $l-size;
+    margin:0;
+}
+
+.header__subtitle {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .header {
+        margin-bottom: $xl-size;
+    }
+}
